@@ -1,43 +1,35 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+<!DOCTYPE html>
+<html>
+<head>
+<title>Child Safety & CSAE Policy</title>
+</head>
+<body>
+<h1>Child Safety & CSAE Standards</h1>
+<p>This page defines <strong>[Your App Name]</strong>'s externally published standards against Child Sexual Abuse and Exploitation (CSAE).</p>
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
+<h2>Zero-Tolerance Policy</h2>
+<p>We strictly prohibit any content, communication, or behavior involving child sexual abuse, exploitation, grooming, or any activity that endangers minors.</p>
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+<h2>Prohibited Content</h2>
+<ul>
+  <li>Child Sexual Abuse Material (CSAM)</li>
+  <li>Sexualized content involving minors</li>
+  <li>Grooming or exploitation attempts</li>
+  <li>Sexual communication with minors</li>
+  <li>Any action, media, or behavior that endangers children</li>
+</ul>
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+<h2>Reporting</h2>
+<p>Users can report any suspicious or harmful activity via email:  
+<strong>[your-support-email@example.com]</strong></p>
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+<h2>Enforcement</h2>
+<p>All reports are reviewed, and violating accounts are suspended or permanently banned.  
+We cooperate with legal authorities as required.</p>
 
-jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload entire repository
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+<h2>Contact</h2>
+<p>For child safety concerns:  
+<strong>[your-support-email@example.com]</strong></p>
+
+</body>
+</html>
